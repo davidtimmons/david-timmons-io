@@ -1,0 +1,64 @@
+/**
+ * https://tailwindcss.com/docs/adding-custom-styles
+ *
+ * The base layer is for things like reset rules or default styles applied to plain HTML elements.
+ * The components layer is for class-based styles that you want to be able to override with utilities.
+ * The utilities layer is for small, single-purpose classes that should always take precedence over any other styles.
+ */
+@import "tailwindcss/base";
+@import "./custom-base-styles.css";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+@import "./custom-utilities.css";
+
+
+/* === BROWSER TWEAKS & HACKS === */
+
+/**
+ * Align summary marker and its list with the surrounding list.
+ */
+
+:root {
+    --li-margin: 0.35rem;
+}
+
+/* Align summary list with surrounding list elements. */
+summary::before,
+details li::before {
+    content: "";
+    margin-left: var(--li-margin);
+}
+
+/* Adjust triangle marker spacing (open). */
+details[open] summary::before {
+    margin-left: calc(var(--li-margin) + 2px);
+}
+
+/* Align summary with surrounding list elements. */
+details[open] summary {
+    margin-left: -2px;
+}
+
+/* Firefox tweaks */
+/* autoprefixer: ignore next */
+@media screen and (min--moz-device-pixel-ratio:0) {
+    /* Add extra space between lists and list markers. */
+    section li::before {
+        content: "";
+        margin-left: 0.25rem;
+    }
+
+    /* Align summary with surrounding list elements. */
+    details summary,
+    details[open] summary {
+        margin-left: 1px;
+    }
+
+    /* Adjust triangle marker spacing. */
+    details summary::before,
+    details[open] summary::before {
+        margin-left: 0.1rem;
+    }
+}

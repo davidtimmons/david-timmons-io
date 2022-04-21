@@ -1,0 +1,15 @@
+@layer utilities {
+    /* https://tailwindcss.com/docs/adding-custom-styles#adding-custom-utilities */
+
+    .animation-fill-forwards {
+        animation-fill-mode: forwards;
+    }
+
+    .noise {
+        background: url("../img/noise.svg");
+    }
+
+    .scanlines {
+        background: url("../img/scanlines.svg");
+    }
+}

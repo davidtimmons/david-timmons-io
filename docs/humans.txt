@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    David Timmons -- site owner -- https://github.com/davidtimmons
+
+# THANKS
+
+    Dalton Maag Ltd -- "Ubuntu" font designer -- https://www.daltonmaag.com/
+    Font Squirrel -- creator of "Webfont Generator" -- https://www.fontsquirrel.com/tools/webfont-generator
+    Luca Burgio -- designer of the mail svg icon -- https://iconoir.com/
+
+# TECHNOLOGY COLOPHON
+
+    HTML, CSS, Tailwind CSS, Browsersync, NPM

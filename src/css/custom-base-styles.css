@@ -1,0 +1,21 @@
+@layer base {
+    /* https://tailwindcss.com/docs/adding-base-styles */
+
+    @font-face {
+        /* License: ../fonts/UBUNTU-FONT-LICENSE.txt */
+        font-family: 'ubuntu-regular';
+        src: url('../fonts/ubuntu-r-webfont.woff2') format('woff2'),
+             url('../fonts/ubuntu-r-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        /* License: ../fonts/UBUNTU-FONT-LICENSE.txt */
+        font-family: 'ubuntu-bold';
+        src: url('../fonts/ubuntu-b-webfont.woff2') format('woff2'),
+             url('../fonts/ubuntu-b-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+}

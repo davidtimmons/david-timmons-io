@@ -1,5 +1,6 @@
 {
     "markdownlint.config": {
         "no-inline-html": false
-    }
+    },
+    "svg.preview.background": "transparent"
 }

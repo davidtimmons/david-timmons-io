@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    html {
+      color: #888;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 2em auto;
+    }
+
+    h1 {
+      color: #555;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 280px;
+    }
+
+    @media only screen and (max-width: 280px) {
+      body,
+      p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+    }
+
+    html { font-size: 18px; }
+    .bg-cyan-dark { background-color: #041317; }
+    .text-cyan-100 { color: rgb(207, 250, 254); }
+    .text-cyan-300 { color: rgb(103, 232, 249); }
+    .hover-fuchsia-400:hover { color: rgb(232, 121, 249); }
+    .active-fuchsia-500:active { color: rgb(217, 70, 239); }
+    .bold { font-weight: bold; }
+    .decoration-none { text-decoration: none; }
+    .duration-300 { transition-duration: 300ms; }
+    .ease-out { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+    .mb-4 { margin-bottom: 1rem; }
+  </style>
+</head>
+
+<body class="bg-cyan-dark text-cyan-100">
+  <h1 class="text-cyan-300 bold mb-4">« page not found »</h1>
+  <p>Sorry, but the page you were trying to view does not exist. Would you like to
+    <a
+      class="text-cyan-300 decoration-none hover-fuchsia-400 active-fuchsia-500 ease-out duration-300"
+      href="https://david.timmons.io/">
+      return home?
+    </a>
+  </p>
+</body>
+
+</html>
+<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
