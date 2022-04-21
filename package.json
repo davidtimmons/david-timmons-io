@@ -34,7 +34,7 @@
     "start": "npm run build:dev --silent && browser-sync start --config ./bs-config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webroot:dev": "cp ./src/*.* ./build-dev/",
-    "webroot:prod": "cp ./src/*.* ./docs/"
+    "webroot:prod": "cp ./src/*.* ./docs/ && cp CNAME ./docs/"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
