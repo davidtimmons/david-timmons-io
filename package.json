@@ -37,7 +37,7 @@
     "webroot:prod": "cp ./src/*.* ./docs/ && cp CNAME ./docs/"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
+    "autoprefixer": "^10.4.5",
     "browser-sync": "^2.27.9",
     "cssnano": "^5.1.7",
     "postcss": "^8.4.12",
